@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>Welcome User!</h2>
+        <div class="second-row-header">
+            <h1>Library</h1>
+            <button class="addBook">Add Book</button>
+        </div>
+    </header>
+
+    <section>
+
+    </section>
+    <fieldset>
+        <form action method>
+            <div class="form-container">
+                <h2>ADD BOOK</h2>
+
+                <div class="form-input">
+                    <label for="title-input" class="col-1">Title: </label>
+                    <input type="text" class="col-2" id="title-input" name="title-input" required>
+
+                    <label for="author-input" class="col-1">Author: </label>
+                    <input type="text" class="col-2" id="author-input" name="author-input" required>
+
+                    <label for="page-input" class="col-1">#Pages: </label>
+                    <input type="number" class="col-2" id="page-input" name="page-input" required>
+
+                    <label for="read-status-input" class="col-1">Read: </label>
+                    <input type="checkbox" class="col-2" id="read-status-input" name="read-status-input">
+
+                    <button type="submit" class="createBook">ADD</button>
+                </div>
+            </div>
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

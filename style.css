@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #353535;
+    --card-color: #465057;
+    --text-color: #f3f3f3;
+    --empty-color: #a0a0a0;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: auto;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 15px 15px 15px 30px;
+}
+
+.second-row-header {
+    display: flex;
+    justify-content: space-between
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.5fr));
+    justify-content: center;
+    align-content: flex-start;
+    text-align: center;
+    gap: 100px;
+    position: relative;
+    flex: 1;
+    padding: 100px;
+}
+
+.empty {
+    white-space: pre-line;
+    color: var(--empty-color);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    column-gap: 30px;
+    row-gap: 10px;
+    background-color: var(--card-color);
+    padding: 30px 0px 30px 0px;
+    position: relative;
+}
+
+.col-1 {
+    text-align: right;
+    justify-self: right;
+}
+
+.col-2 {
+    text-align: left;
+    justify-self: start;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: 10%;
+    justify-self: start;
+}
+
+fieldset {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--card-color);
+    /* display: none; */
+}
+
+.form-container {
+    padding: 15px;
+    gap: 15px;
+}
+
+.form-input {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 5px;
+    column-gap: 30px;
+}
+
+.form-input>label,
+.form-input>h2 {
+    font-size: clamp(1rem, 3vh, 2rem);
+}
+
+.form-input>button {
+    margin-top: 20px;
+    justify-self: center;
+    width: 40%;
+    height: 30px;
+    grid-column: 1 / -1;
+}
+
+.removeButton {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
